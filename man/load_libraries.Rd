@@ -4,10 +4,15 @@
 \alias{load_libraries}
 \title{A library loading function.}
 \usage{
-load_libraries(libraries = c("tidyverse", "magrittr", "haven", "ggplot2"))
+load_libraries(
+  libraries = c("tidyverse", "magrittr", "haven", "ggplot2"),
+  update = F
+)
 }
 \arguments{
 \item{libraries}{A vector of library names as strings. Defaults to "tidyverse","magrittr","haven", and "ggplot2"}
+
+\item{update}{TRUE/FALSE. Indicates whether you want all the packages to be updated. Defaults to FALSE.}
 }
 \description{
 This function loads a list of libraries. If any of the libraries are missing, it installs them first.
