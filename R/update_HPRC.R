@@ -7,6 +7,7 @@
 
 update_HPRC = function() {
   require("devtools")
-  detach("package:HPRC", unload=TRUE)
+  tryCatch(expr = {detach("package:HPRC", unload=TRUE)},
+           error = function(cond){print("HPRC package not loaded, continuing update.")})
   devtools::install_github("D-Zacster/HPRC")
 }
