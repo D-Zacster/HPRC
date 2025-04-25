@@ -1,4 +1,7 @@
-# document() will create documentation for functions based on comments in their code
+# To create documentation for functions based on comments in their code run:
+# library(devtools)
+# setwd(r"(C:\Users\Zacb3\OneDrive - University of Oklahoma\HPRC Files\R\HPRC)")
+# document()
 
 # install("./HPRC") while in the project will install what is currently written
 

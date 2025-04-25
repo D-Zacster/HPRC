@@ -7,5 +7,6 @@
 
 update_HPRC = function() {
   require("devtools")
+  detach("package:HPRC", unload=TRUE)
   devtools::install_github("D-Zacster/HPRC")
 }
