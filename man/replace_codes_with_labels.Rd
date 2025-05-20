@@ -15,6 +15,6 @@ replace_codes_with_labels(labelled_vector, label_string = "labels")
 This function replaces the codes in a haven_labelled vector with the values associated with the code. Can be used in a mutate call from dplyr or on any appropriate vector.
 }
 \examples{
-haven_loaded_data_frame \%>\% 
+haven_loaded_data_frame \%>\%
   mutate(new_column = replace_codes_with_labels(haven_labelled_vector))
 }
